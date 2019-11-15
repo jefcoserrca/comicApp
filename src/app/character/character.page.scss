@@ -1,0 +1,15 @@
+.porfile {
+    border-radius: 50%;
+    position: relative;
+    left: 15%;
+    bottom: 125px;
+    width: 150px;
+    height: 150px;
+}
+
+.fondoComic {
+    -webkit-filter: saturate(250%);
+    filter: saturate(250%);
+    -webkit-filter: brightness(170%);
+    filter: brightness(155%);
+}

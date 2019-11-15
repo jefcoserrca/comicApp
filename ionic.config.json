@@ -1,5 +1,7 @@
 {
   "name": "comicApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

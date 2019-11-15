@@ -1,6 +1,11 @@
-// App Styles
-// ----------------------------------------------------------------------------
-// Put style rules here that you want to apply to the entire application. These 
-// styles are for the entire app and not just one component. Additionally, this 
-// file can hold Sass mixins, functions, and placeholder classes to be imported 
-// and used throughout the application.
+ion-content {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0f9ff+0,9e9e9e+100 */
+    --ion-background-color: rgb(240, 249, 255);
+    /* Old browsers */
+    --ion-background-color: -moz-linear-gradient(top, rgba(240, 249, 255, 1) 0%, rgba(158, 158, 158, 1) 100%);
+    /* FF3.6-15 */
+    --ion-background-color: -webkit-linear-gradient(top, rgba(240, 249, 255, 1) 0%, rgba(158, 158, 158, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    --ion-background-color: linear-gradient(to bottom, rgba(240, 249, 255, 1) 0%, rgba(158, 158, 158, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

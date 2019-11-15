@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{this.tipe|uppercase}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list style="--ion-background-color: transparent">
+
+        <ion-item *ngFor="let heroe of heroesData_" style="--ion-background-color: transparent" (click)="info(heroe)">
+
+            <ion-avatar slot="start">
+                <img [src]="heroe.images.thumbnail" alt="heroe_img">
+            </ion-avatar>
+            &nbsp;
+            <ion-col>
+                <ion-text>
+                    <h2>{{heroe.superName}}</h2>
+                    <p>
+                        <ion-icon name="pricetag"></ion-icon> team: {{heroe.teams[0]}}</p>
+                    <p>
+                        <ion-icon name="book"></ion-icon> comics: {{heroe.ranking.comicCount}}</p>
+                </ion-text>
+            </ion-col>
+            <ion-icon color="primary" slot="end" name="information-circle"></ion-icon>
+        </ion-item>
+
+    </ion-list>
+
+</ion-content>

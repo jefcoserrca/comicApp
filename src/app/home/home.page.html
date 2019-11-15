@@ -1,14 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="danger">
+        <ion-title>
+            ComicApp
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content class="bg-image">
+
+    <ion-grid>
+        <div class="ion-text-center">
+            <br>
+            <img style="width: 192px;height: 78px; text-align: center" src="../../assets/marvel.png"></div>
+        <ion-row style="padding-top: 20%; margin-left: 20px;">
+
+            <ion-col>
+                <ion-row>
+                    <div class="ion-text-center">
+                        <img (click)="button('heroes')" style="width: 150px;height: 150px;" src="../../assets/superheroe.png">
+                        <h3 style="font-weight: bold;color: rgb(255, 255, 255)">HEROES</h3>
+                    </div>
+                </ion-row>
+            </ion-col>
+            <ion-col>
+                <ion-row>
+                    <div class="ion-text-center">
+                        <img (click)="button('villanos')" style="width: 150px;height: 150px;" src="../../assets/villain.png">
+                        <h3 style="font-weight: bold;color: rgb(255, 255, 255)">VILLANOS</h3>
+                    </div>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <div style="text-align: center; padding-top: 50%">
+        <p style="font-size: x-small ;color: rgb(255, 255, 255)">DESIGN BY KOI COMPANY &copy;</p>
+    </div>
 </ion-content>
